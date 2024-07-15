@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Chat App</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center centered_form">
+      <div class="d-flex flex-column justify-content-center centered_form_box">
+        <h1 class="text-center mb-5">Join Chats</h1>
+        <form
+          class="d-flex flex-column justify-content-around mx-5"
+          action="./chat.html"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <label>Display Name</label>
+          <input
+            type="text"
+            name="username"
+            id="display_name"
+            class="form mb-4"
+            placeholder="Display Name"
+            required
+          />
+
+          <label>Room</label>
+          <input
+            type="text"
+            name="room"
+            id="room"
+            class="form mb-4"
+            placeholder="Enter Room"
+            required
+          />
+
+          <label>Profile Image</label>
+          <input
+            type="file"
+            name="image"
+            id="image"
+            accept="image/*"
+            class="form mb-4"
+            required
+          />
+
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+.chat {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.chat_sidebar {
+  flex: 0 0 25%; /* 30% of the width */
+  background-color: #333;
+  color: #fff;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 25%; /* Make sure the form container takes the correct width */
+  background-color: #242323;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(65, 63, 63, 0.1);
+}
+.userlist {
+  margin-top: 120px;
+}
+.custom-list {
+  background-color: #333;
+  font-size: medium;
+}
+.avatar {
+  width: 40px; /* Set the width of the avatar */
+  height: 40px; /* Set the height of the avatar */
+  border-radius: 50%; /* Make the avatar circular */
+  margin-right: 10px; /* Add some space between the avatar and the username */
+  vertical-align: middle; /* Align the avatar with the middle of the text */
+}
+
+.chat_main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#message-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1; /* Take up all remaining space */
+  margin-bottom: 120px;
+}
+
+#message-form-container {
+  position: fixed;
+  bottom: 0;
+  width: 75%; /* Make sure the form container takes the correct width */
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(148, 142, 142, 0.1);
+}
+
+.block-input {
+  display: inline;
+  width: 700px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+h5 {
+  display: inline-block;
+  border: solid #dacdcd 0.5px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.flex-start {
+  align-self: flex-start;
+  margin-left: 30px;
+  background-color: #dacdcd;
+}
+
+.flex-end {
+  align-self: flex-end;
+  margin-right: 30px;
+  background-color: #dacdcd;
+}
+
+.center {
+  align-self: center;
+  font-size: 14px;
+  padding: 4px;
+}
+
+a {
+  color: inherit;
+}
+
+span {
+  bottom: 0;
+  margin-left: 5px;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.username:empty {
+  display: none;
+}

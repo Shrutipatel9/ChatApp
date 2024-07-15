@@ -1,0 +1,10 @@
+.centered_form {
+  margin: 0 auto;
+  height: 100vh;
+  background-color: rgb(2, 75, 109);
+}
+.centered_form_box {
+  width: 450px;
+  height: 500px;
+  background-color: aliceblue;
+}
